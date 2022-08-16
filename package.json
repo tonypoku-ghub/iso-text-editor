@@ -8,8 +8,10 @@
     "start": "npm run build && cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
+    "build:watch": "cd client && npm run start",    
     "install": "cd client && npm install",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "client:watch": "concurrently \"npm run build:watch\" && \"cd server && node server.js\""   
   },
   "keywords": [],
   "author": "",

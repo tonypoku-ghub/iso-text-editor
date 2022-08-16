@@ -12,7 +12,6 @@ module.exports = () => {
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
-      editor: "./src/js/editor.js",
     },
     output: {
       filename: "[name].bundle.js",
@@ -35,9 +34,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: "Contact Cards",
-        short_name: "Contact",
-        description: "Never forget your contacts!",
+        name: "JATE",
+        short_name: "jate",
+        description: "just another text editor!",
         background_color: "#225ca3",
         theme_color: "#225ca3",
         start_url: "/",
